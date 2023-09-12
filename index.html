@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Project</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-pepper-hot"></i> Taste of India</a>
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#dishes">Dishes</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Review</a>
+            <a href="#order">Order</a>
+            <a href="#about">About</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class = "fas fa-heart"></a>
+            <a href="#" class = "fas fa-shopping-cart"></a>
+        </div>
+    </header>
+    
+    <!-- Header Section -->
+
+    <!-- Search Bar -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="search..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- Search Bar ends-->
+
+    <!-- Home Section Starts-->
+
+    <section class="home" id = "home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Taste of South-India</span>
+                        <h3>Dosa</h3>
+                        <p>a thin savory pancake in South Indian cuisine made from a fermented batter of ground black lentils and rice.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/dosa.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Taste of Delhi</span>
+                        <h3>Aalu Paratha</h3>
+                        <p>a culinary delight from India, boasting a crispy exterior and a flavorful, comforting interior.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/paratha.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Taste of Hyderabad</span>
+                        <h3>Biryani</h3>
+                        <p> a fragrant rice dish, harmoniously blending spices, marinated meat, or vegetables into a flavorful, one-pot delight.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/biryani.png" alt="">
+                    </div>
+                </div>
+ 
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Taste of Mumbai</span>
+                        <h3>Vada Pav</h3>
+                        <p>a spicy potato fritter tucked inside a soft bun, offering a delicious blend of spiciness and comfort in every bite.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/vadapav.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Taste of Bihar</span>
+                        <h3>Litti Chokha</h3>
+                        <p>Roasted wheat flour balls (litti) paired with a spiced vegetable mash (chokha), a rustic North Indian delicacy bursting with earthy flavors.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/litti.png" alt="">
+                    </div>
+                </div>
+                
+            </div>  
+            
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+              </svg>
+              <span></span>
+            </div>
+        </div>
+          
+    </section>
+
+    <!-- Home Section Ends -->
+    
+    <!-- dishes section starts -->
+    
+    <section class="dishes" id = "dishes">
+        <h3 class="sub-heading"> Our Dishes </h3>
+        <h1 class="heading"> Best Seller </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/kadhayi paneer.png" alt="">
+                <h3>Kadai Paneer</h3>
+                <div class ="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>₹349</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/Veg Pakoda.png" alt="">
+                <h3>Veg Pakoda</h3>
+                <div class ="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>₹119</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/Samosa.png" alt="">
+                <h3>Samosa</h3>
+                <div class ="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>₹99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/chole.png" alt="">
+                <h3>Chole Bhatura</h3>
+                <div class ="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>₹179</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/pav bhaji.png" alt="">
+                <h3>Pav Bhaji</h3>
+                <div class ="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>₹149</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/Dhokla.png" alt="">
+                <h3>Dhokla</h3>
+                <div class ="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>₹199</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/thukpa.png" alt="">
+                <h3>Thukpa</h3>
+                <div class ="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>₹249</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/pani puri.png" alt="">
+                <h3>Pani Puri</h3>
+                <div class ="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>₹99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- dishes section ends -->
+
+    <!-- menu section starts -->
+
+    <section class="menu" id="menu">
+        <h3 class="sub-heading"> Our Menu </h3>
+        <h1 class="heading"> Popular Items </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu/Gajar_Halwa1.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="price">₹999</span>
+                    </div>
+                    <h3>Gajar Halwa</h3>
+                    <p>A sweet Indian dessert made from grated carrots, cooked in ghee, milk, and sugar, with a hint of cardamom, often garnished with nuts.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu/ghewar1.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="price">₹799</span>
+                    </div>
+                    <h3>Shahi Ghewar</h3>
+                    <p>A North Indian dessert made from deep-fried batter, soaked in syrup, and often garnished with nuts, enjoyed during festivals and celebrations.</p>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu/gulab jamun1.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="price">₹399</span>
+                    </div>
+                    <h3>Gulab Jamun</h3>
+                    <p>A classic Indian dessert consisting of deep-fried milk-based dough balls soaked in sugar syrup, delivering a sweet and indulgent treat.</p>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu/lassi1.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="price">₹199</span>
+                    </div>
+                    <h3>Special Lassi</h3>
+                    <p>A refreshing Indian drink made from yogurt, milk, and sugar (or salt), often flavored with fruits or spices, offering a creamy and satisfying taste.</p>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu/milk cake1.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="price">₹699</span>
+                    </div>
+                    <h3>Milk Cake</h3>
+                    <p>A sweet confection made from milk and sugar, cooked to a fudge-like consistency and often flavored with cardamom or other spices, creating a delectable dessert.</p>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu/ras malai1.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="price">₹249</span>
+                    </div>
+                    <h3>Ras Malai</h3>
+                    <p>A delectable Indian dessert composed of soft cheese dumplings soaked in sweet, creamy, and fragrant milk, making it a delightful and indulgent treat.</p>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu/til laddu1.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="price">₹599</span>
+                    </div>
+                    <h3>Til Laddu</h3>
+                    <p>A cherished Indian sweet, blending roasted sesame seeds with rich jaggery, forming round, flavorful treats with a delightful mix of nuttiness and sweetness.</p>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu/thali1.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="price">₹399</span>
+                    </div>
+                    <h3>Veg Thali</h3>
+                    <p>A complete Indian vegetarian meal served on a single platter, offering a range of dishes like dal, vegetables, rice, chapati, and condiments, showcasing diverse flavors.</p>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- menu section ends -->
+
+    <!-- review section starts -->
+
+    <section class="review" id="review">
+        <h3 class="sub-heading"> Customer's review </h3>
+        <h1 class="heading"> What they say </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="img/review/female.png" alt="">
+                        <div class="user-info">
+                            <h3>Akanksha</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The online menu offers a wide selection of dishes to satisfy various tastes. Whether you're in the mood for Indian classics or something new, there's something for everyone.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="img/review/man.png" alt="">
+                        <div class="user-info">
+                            <h3>Aditya</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The vegetarian options are a standout feature. From paneer dishes to veggie curries, there's a diverse range for vegetarians, and each one is a treat.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="img/review/man.png" alt="">
+                        <div class="user-info">
+                            <h3>Rahul</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>For those busy days when cooking is not an option, "Taste of India" offers a convenient solution. The food quality and service are consistently top-notch, making it a reliable choice.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="img/review/man.png" alt="">
+                        <div class="user-info">
+                            <h3>Udit</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The customer service is commendable. They promptly address any concerns and ensure that you have a pleasant dining experience. Ordering from here is a breeze.
+                        Orders arrive on time, and the packaging ensures that the food remains in excellent condition.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="img/review/man.png" alt="">
+                        <div class="user-info">
+                            <h3>Abhinav</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>One thing that stands out is the consistent excellence in taste. You can order with confidence, knowing that each time you'll experience the same deliciousness.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="img/review/man.png" alt="">
+                        <div class="user-info">
+                            <h3>Vishal</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Don't miss out on the desserts. The sweet treats, especially the gulab jamun and ras malai, are a perfect way to end your meal on a sweet note.</p>
+                </div> 
+            </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- order section starts -->
+
+    <section class="order" id="order">
+
+        <h3 class="sub-heading"> Order Now </h3>
+        <h1 class="heading"> Free Delivery </h1>
+
+        <form action ="">
+            <div class="inputBox">
+                <div class="input">
+                    <span>Your Name</span>
+                    <input type="text" placeholder="enter your name">
+                </div>
+                <div class="input">
+                    <span>Your Number</span>
+                    <input type="number" placeholder="enter your number">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>Your Order</span>
+                    <input type="text" placeholder="enter dish name">
+                </div>
+                <div class="input">
+                    <span>Additional item</span>
+                    <input type="text" placeholder="extra with food">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>Total items</span>
+                    <input type="number" placeholder="total items">
+                </div>
+                <div class="input">
+                    <span>Date and time</span>
+                    <input type="datetime-local">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>Your Address</span>
+                    <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>Your Message</span>
+                    <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <input class="btn" type="submit" value="Order Now">
+        </form>
+
+
+
+
+    </section>
+
+    <!-- order section ends -->
+ 
+    <!-- about section starts -->
+
+    <section class="about" id="about">
+        <h3 class="sub-heading"> about us </h3>
+        <h1 class="heading"> why choose us </h1>
+        <div class="row">
+            <div class="image">
+                <img src="img/1 (1).png" alt="">
+            </div> 
+            <div class="content">
+                <h3>The authentic taste of India</h3>
+                <p>At Taste Of India, we are not just a food delivery service; we are your gateway to an unforgettable culinary journey through the diverse flavors of India. What sets us apart is our unwavering commitment to authenticity and excellence. With a carefully curated menu featuring iconic dishes from every corner of India, prepared by renowned chefs and authentic local restaurants, we guarantee an unparalleled gastronomic experience.
+
+                </p>
+                <p>Our dedication to quality extends beyond our food. We prioritize your convenience, offering a seamless online ordering process and real-time delivery tracking. Whether you're craving the spicy delights of Hyderabad, the aromatic richness of Punjab, or the coastal flavors of South India, our menu caters to every palate.</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>free delivery</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        <span>Easy payment</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- about section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Locations</h3>
+                <a>Baghpat</a>
+                <a>Tehri</a>
+                <a>Haldwani</a>
+                <a>Banaras</a>
+                <a>Delhi</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="tel: 9758466589">+91 9758466589</a>
+                <a href="mailto: adi.sharma@gmail.com">adi.sharma@gmail.com</a>
+                <a>Greater Noida, Uttar Pradesh - 201310</a>
+            </div>
+            <div class="box">
+                <h3>Follow me</h3>
+                <a href="https://www.instagram.com/adi_sharma.999/">Instagram</a>
+                <a href="https://www.linkedin.com/in/aditya-sharma-01811319b/">Linkedin</a>
+            </div>
+        </div>
+        
+        <div class="credit"> copyright @ 2023 by <span>Aditya Sharma</span></div>
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
