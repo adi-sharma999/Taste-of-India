@@ -1,2 +1,2 @@
 # Taste-of-India
-An online food delivery web-app
+An online food delivery web-app.
