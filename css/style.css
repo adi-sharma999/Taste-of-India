@@ -8,6 +8,7 @@
     --back: linear-gradient( var(--black),var(--cyan),var(--black));
 }
 
+
 *{
     font-family: 'Raleway', sans-serif;
     margin: 0; padding: 0;
@@ -17,7 +18,6 @@
     text-transform: capitalize;
     transition: all .2s linear;
 }
-
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -125,11 +125,6 @@ section{
     font-size: 4rem;
 }
 
-
-
-
-
-
 header{
     position: fixed;
     align-items:center;
@@ -205,6 +200,9 @@ header .icons a:hover{
 
 .home .home-slider .slide .image{
     flex:1 1 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home .home-slider .slide .content span{
@@ -466,8 +464,11 @@ header .icons a:hover{
     background-color: var(--cyan);
 }
 .menu .box-container .box .content{
-    padding: 2rem;
+    padding: 2.5rem;
     padding-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .menu .box-container .box .content .stars{
@@ -507,6 +508,7 @@ header .icons a:hover{
 
 .menu .box-container .box .content .price{
     color: var(--light-color);
+    justify-content: space-between;
     margin-left: 1rem;
     font-size: 2rem;
 }
@@ -685,6 +687,8 @@ header .icons a:hover{
     box-shadow: 0px 5px 40px -10px var(--cyan);
     transition: all 0.3s ease 0s;
     padding-bottom: 1.5rem;
+    border-color: var(--cyan);
+    border-radius: 1.5rem;
 }
 
   
@@ -707,30 +711,29 @@ header .icons a:hover{
 
 
 @media (max-width:768px){
+            
+
         
+    header{
+        position: fixed;
+        align-items:center;
+        justify-content: space-between;
+        z-index: 1000;
+        top: 0; left: 0; right: 0;
+        background-color: #fff;
+        padding: 1rem 7%;
+        display: flex;
+        box-shadow:var(--box-shadow);
+    }
 
-    
-header{
-    position: fixed;
-    align-items:center;
-    justify-content: space-between;
-    z-index: 1000;
-    
-    top: 0; left: 0; right: 0;
-    background-color: #fff;
-    padding: 1rem 7%;
-    display: flex;
-    box-shadow:var(--box-shadow);
-}
-
-header .logo{
-    color:var(--black);
-    font-size: 1.25rem;
-    font-weight: bolder;
-}
-header .logo i{
-    color:var(--cyan);
-}
+    header .logo{
+        color:var(--black);
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    header .logo i{
+        color:var(--cyan);
+    }
 
     header .icons #menu-bars{
         display: inline-block;
@@ -772,28 +775,279 @@ header .logo i{
         font-size: 3rem;
     }
 
+    .home .home-slider .slide .content{
+        justify-content: center;
+        align-items: center;
+    }
+    .home .home-slider .slide .content span{
+        font-size: 2rem;
+    }
+    .home .home-slider .slide .image{
+        flex:1 1 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+    
+    .home .home-slider .slide .content p{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+        
+    .home{
+        margin: 0rem 2rem;
+    }
+    .swiper-pagination-bullet-active{
+        background: var(--cyan);
+    }
 
+    .btn{
+        font-size: 1rem;
+    }
 
-.home .home-slider .slide .image img{
-    width: 100%;
+    .dishes .box-container{
+        grid-template-columns: repeat(auto-fit,minmax( 20rem, 1fr));
+        gap: 5rem;
+    }
+
 }
 
-.home .home-slider .slide .content span{
-    font-size: 2rem;
-}
+@media (max-width:500px) {
+    header .logo{
+        color:var(--black);
+        font-size: 1.75rem;
+        font-weight: bolder;
+    }
+        
+        
+    .sub-heading{
+        text-align: center;
+        color: var(--cyan);
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
 
-.home .home-slider .slide .content h3{
-    font-size: 3rem;
-}
+    .heading{
+        text-align: center;
+        color: silver;
+        font-size: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+        text-transform: uppercase;
+    }
+
+    .about .row .content h3{
+        color: var(--black);
+        font-size: 2.4rem;
+        padding: .5rem 0;   
+    }
+
+    .about .row .content p{
+        color: var(--light-color);
+        font-size: 1.5rem;
+        padding: .5rem 0;
+        line-height: 1.6;
+    }
+    
+    .about .row .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .about .row .image img{
+        width: 100%;
+        margin: 0 9rem 0 0;
+    }
+
+        
+
+    .about .row .content .icons-container{
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding:1rem 0;
+        margin-top: .5rem;
+    }
 
 
-.home .home-slider .slide .content p{
-    font-size: 1.5rem;
-}
+    .about .row .content .icons-container .icons{
+        background: #fff;
+        border-radius: 3rem;
+        border:.2rem solid var(--black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:1rem;
+        flex:1 1 17rem;
+        padding:1rem .5rem;
+    }
 
-.btn{
-    font-size: 1rem;
-}
+
+    .about .row .content .icons-container .icons i{
+        font-size: 1.5rem;
+        color:var(--cyan);
+    }
 
 
+    .about .row .content .icons-container .icons span{
+        font-size: 1.25rem;
+        color: var(--black);
+    }
+
+
+
+
+
+    .home{
+        margin: 0rem 0rem;
+    }
+        
+    .home .home-slider .slide .content h3{
+        font-size: 3rem;
+    }
+
+    .home .home-slider .slide .content p{
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    header .navbar a{
+        font-size: 1.75rem;
+        border-radius: .5rem;
+        padding: .5rem 1.5rem;
+        color:var(--light-color);
+        justify-content: center;
+        text-align: center;
+    }
+    
+    header .icons i,
+    header .icons a{
+        cursor: pointer;
+        margin-left: .5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        width: 2.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--black);
+        border-radius: 50%;
+        background: #eee;
+    }
+    
+    
+    .autoplay-progress {
+        position: absolute;
+        right: 5px;
+        bottom: 25px;
+        z-index: 10;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        font-size: 1.25rem;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: var(--black);
+    }
+    
+        
+    .home .home-slider .slide .image{
+        flex:1 1 1rem;
+        margin-bottom: 5rem;
+    }
+    .home .home-slider .slide .image img{
+        width: 100%;
+    }
+    
+  .dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax( 28rem, 1fr));
+    gap: 0rem;
+  }
+
+  .dishes .box-container .box{
+    padding: 3rem;
+    background: #fff;
+    border-radius:1.5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 2rem 3rem;
+  }
+
+  
+    .menu .box-container .box .content .stars .price{
+        font-size: 1.5rem;
+        justify-content: space-between;
+        color: var(--light-color);
+        font-style: italic;
+    }
+        
+    .menu .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax( 30rem, 1fr));
+        gap: 2rem;
+    }
+
+    .menu .box-container .box{
+        background: #fff;
+        border: .1rem solid var(--black);
+        border-radius: 1.5rem;
+        box-shadow: var(--box-shadow);
+        margin: 0 1rem;
+    }
+        
+    .menu .box-container .box .content{
+        padding: 1rem;
+        padding-top: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+    .footer .credit{
+        text-align: center;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        font-size: 1.3rem;
+        color: var(--black);
+        padding: .5rem;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0rem;
+    }
+
+        
+    .footer .box-container .box h3{
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        color: var(--black);
+    }
+
+
+    .footer .box-container .box a{
+        display: block;
+        padding: .25rem 0;
+        font-size: 1rem;
+        color: var(--light-color);
+    }
+
+    .footer .credit:hover{
+        font-weight: 700 !important;
+        letter-spacing: 1px;
+        background: none;
+        box-shadow: 0px 5px 40px -10px var(--cyan);
+        transition: all 0.3s ease 0s;
+        padding-bottom: 1.5rem;
+        border-color: var(--cyan);
+        border-radius: 1.5rem;
+    }
 }
