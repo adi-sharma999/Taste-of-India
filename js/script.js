@@ -27,7 +27,6 @@ window.onscroll = () =>{
         document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
       });
     };
-
   });
 
 }
